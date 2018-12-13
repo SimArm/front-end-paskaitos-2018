@@ -3,7 +3,7 @@
 <input type="text" class="form-control"
     [(ngModel)]="uzduotisName">
 <li *ngFor="let uzduotis of uzduotys"
-  (click)="onClick()">
+  ng-click="onClick($scope)" ng-style="stilius">
   {{uzduotis}}
 </li>
 

@@ -28,8 +28,8 @@ export class KomponentasComponent implements OnInit {
     this.uzduotys.push(this.uzduociuList);
   }
 
-  onClick(){
+  onClick($scope){
     this.uzduotisDisabled = true;
-
+    $scope.stilius = { "color":"red","background-color":"black"};
   }
 }
