@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>jQuery</title>
+  </head>
+  <body>
+    <button id="button1">Paslepti turini</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus alias reiciendis in rem consequuntur ipsam. Incidunt vero voluptatum atque placeat!</p>
+    <button id="sarasas">Slepti sarasa</button>
+    <ul>
+      <li>tekstas</li>
+      <li>tekstas</li>
+      <li>tekstas</li>
+      <li>tekstas</li>
+      <li>tekstas</li>
+    </ul>
+    <button id="button2">Slepti/rodyti</button>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem, numquam harum quasi sed obcaecati corporis perspiciatis perferendis ipsa. Aspernatur.
+    </p>
+    <br>
+    <button id="button3">Pav toggle</button>
+    <br>
+    <img id="pav1" src="grafikas 12.07.png" alt="grafikas">
+    <br>
+    <button id="button4">Box slideshow</button>
+    <button id="button5">Box fade</button>
+    <div class="container pvz1"><p> </p></div>
+    <div class="hide">
+      <button>hide</button>
+      <button>hide</button>
+      <button>hide</button>
+      <button>hide</button>
+      <button>hide</button>
+      <button>hide</button>
+    </div>
+    <div>
+      <ul id="aaa">
+        <li>Pirmas. Lorem ipsum dolor sit.<button>X</button></li>
+        <li>Antras. Lorem ipsum dolor sit.<button>X</button></li>
+        <li>Trecias. Lorem ipsum dolor sit.<button>X</button></li>
+        <li>Ketvirtas.Lorem ipsum dolor sit.<button>X</button></li>
+        <li>Penktas. Lorem ipsu m dolor sit.<button>X</button></li>
+      </ul>
+    </div>
+    <button id="button6">Alert button</button>
+    <input type="text" id="laukelis" placeholder="rasykite teksta">
+    <p id="laukelisp"></p>
+    <div>
+      <p id="laukelis12">Lorem ipsum dolor sit amet.</p>
+      <input type="text" id="laukelis1" placeholder="tekstas">
+    </div>
+    <br>
+    <input type="text" id="prideti1" placeholder="tekstas">
+    <button id="prideti">prideti</button>
+    <ul id="ul"></ul>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="aa.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#button1").on("click", function(){
+          $("p").hide();
+        })
+        $("#sarasas").on("click", function(){
+          $("li").hide();
+        })
+        $("#button2").on("click", function(){
+          $("#para1").toggle();
+        })
+        $("#button3").on("click", function(){
+          $("img").toggle();
+        })
+        $("#button4").on("click", function(){
+          $(".pvz1").slideToggle();
+        })
+        $("#button5").on("click", function(){
+          $(".pvz1").fadeToggle();
+        })
+        $(".hide button").on("click", function(){
+          $(this).hide();
+        })
+      })
+    </script>
+  </body>
+</html>

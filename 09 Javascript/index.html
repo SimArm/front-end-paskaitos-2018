@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    span{
+      color:red;
+    }
+    </style>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit ametconsectetur adipisicing elit.  Tempore nobis esse dolores, exercitationem eius, aliquid doloremque quibusdam autem molestias quisquam harum tenetur? A quam culpa sint obcaecati. A, quod veniam?
+    </p>
+    <p id="Paragrafas">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum similique accusantium iusto atque aut nam perspiciatis amet. Neque quidem quos voluptatum exercitationem consequuntur commodi facere, explicabo est, provident reiciendis deserunt?
+    </p>
+    <p id="paragrafas3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio esse dolorem mollitia veniam omnis, ipsam quas iste ab aperiam incidunt quo reiciendis velit voluptatum harum! Necessitatibus adipisci consectetur reprehenderit.
+    </p>
+    <script>
+      document.getElementById("Paragrafas").innerHTML = "Naujas tekstas";
+      document.getElementById("paragrafas3").innerHTML = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinc <span> tio esse dolorem mollitia veniam omnis, ipsam quas iste ab </span> aperiam incidunt quo reiciendis velit voluptatum harum! Necessitatibus adipisci consectetur reprehenderit. </p>";
+    </script>
+    <button onclick="document.getElementById('tekstas0').innerHTML = Date();">
+      Pakeisti teksta
+    </button>
+    <p id="tekstas0">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. A dolore delectus atque laboriosam consequatur voluptate
+      doloribus reiciendis neque veritatis aliquid obcaecati eaque molestiae nobis commodi tempore cupiditate itaque, quis
+      est?
+    </p>
+    <button onclick="document.getElementById('tekstas').style.color = 'red';">
+      Pakeisti spalva
+    </button>
+    <button onclick="document.getElementById('tekstas').style.fontSize = '35px' ">
+      Padidinti teksta
+    </button>
+    <button onclick="document.getElementById('tekstas').style = ''">
+      Atstatyti teksta
+    </button>
+    <button onclick="document.getElementById('tekstas').style.fontSize = '5px' ">
+      Sumazinti teksta
+    </button>
+    <button onclick="document.getElementById('tekstas').style.fontWeight = 'bold'">
+      Pastorinti teksta
+    </button>
+    <button onclick="document.getElementById('tekstas').style.fontStyle = 'italic' ">
+      Pasverti teksta
+    </button>
+    <button onclick="document.getElementById('tekstas').style.fontWeight = '' ">
+      Atstatyti stori
+    </button>
+    <p id="tekstas">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. A dolore delectus atque laboriosam consequatur voluptate
+      doloribus reiciendis neque veritatis aliquid obcaecati eaque molestiae nobis commodi tempore cupiditate itaque, quis
+      est?
+    </p>
+    <button onclick="document.getElementById('lempute').src='pic_bulbon.gif' ">
+    Ijungti lempute
+    </button>
+    <button onclick="document.getElementById('lempute').src='pic_bulboff.gif'">
+    Isjungti lempute
+    </button>
+    <br> <br>
+    <img id="lempute" src="pic_bulboff.gif" alt="lempute">
+    <div class="container" id="kvadratas"> <p> a</p></div>
+    <button onclick="document.getElementById('kvadratas').style.backgroundColor = 'blue'">
+      pakeisti kvadrato spalva
+    </button>
+    <button onclick="document.getElementById('kvadratas').style.backgroundColor = ''">
+      atstatyti kvadrato spalva
+    </button>
+    <br>
+    <button onclick="pakeisti()">Pakeisti teksta</button>
+    <p id="tekstas12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero.</p>
+    <script>
+      function pakeisti() {
+        document.getElementById('tekstas12').innerHTML = 'naujas tekstas';
+        document.getElementById('tekstas22').innerHTML = 'naujas tekstas22';
+        document.getElementById('tekstas23').innerHTML = 'naujas tekstas23';
+      }
+    </script>
+    <p id="tekstas22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos iste facere placeat deserunt similique!</p>
+    <p id="tekstas23">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas error ad sint non vitae itaque ut.</p>
+    <br>
+    <p id="tekstas31">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus vel doloribus aliquid nemo eum ratione quae cumque nisi sequi.</p>
+    <p id="tekstas32">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iusto vero ipsam veniam esse laboriosam magni dolor hic nostrum asperiores rerum, ratione repellat.</p>
+    <script>
+      function pakeisti3() {
+        document.getElementById('tekstas31').style.color = 'red';
+        document.getElementById('tekstas32').style.fontSize = '35px';
+      }
+    </script>
+    <button onclick="pakeisti3()">pakeisti3</button>
+    <script>
+      function pastorinti(){
+        document.getElementById('tekstas22').style.fontWeight='bold';
+        document.getElementById('tekstas31').style.fontWeight='bold';
+        document.getElementById('tekstas32').style.fontWeight='bold';
+      }
+    </script>
+    <button onclick="pastorinti()">storinti teksta</button>
+    <br>
+    <script>
+      function pakeisti4(elementas, tekstas) {
+        document.getElementById(elementas).innerHTML = tekstas;
+      }
+    </script>
+    <p id="tekstas4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nisi, quidem fugit quas quasi libero iure nobis consequatur deserunt aut! Aliquid quae perferendis qui suscipit repellendus, eveniet ipsa modi enim laboriosam quaerat accusantium aliquam fuga amet tenetur ipsum tempora minus est! Doloremque ab incidunt qui aut quidem assumenda dicta labore?</p>
+    <button onclick="pakeisti4('tekstas4', 'Vienas du trys')">text123</button>
+    <button onclick="pakeisti4('tekstas4', 'keturi penki sesi')">text456</button>
+    <p id="tekstas5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a? Earum libero dolore adipisci repudiandae consequuntur velit recusandae ea quos.</p>
+    <button onclick="pakeisti4('tekstas5', 'naujas tekstas')">naujas</button>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <hr>
+    <button onclick="stilius1('tekstas4','bold')">Paryskitas</button>
+    <button onclick="stilius1('tekstas4','italic')">Pasvires</button>
+    <button onclick="stilius1('tekstas4','')">Atstatyti</button>
+    <hr>
+    <p id="suma"></p>
+    <p id="skirtumas"></p>
+    <p id="sandauga"></p>
+    <p id="dalmuo"></p>
+    <hr>
+    <input type="number" id="pirmassk">
+    <input type="number" id="antrassk">
+    <button onclick="suma1()">suma</button>
+    <button onclick="skirtumas1()">skirtumas</button>
+    <p id="suma1"></p>
+    <script src="7.js"></script>
+    <hr>
+    <script>
+      for (i = 0; i < 5; i++){
+        console.log(i);
+      }
+      for (i = 5; i < 15; i++){
+        console.log(i);
+      }
+      for (i = 1; i < 11; i++){
+        console.log(i);
+        console.log(i*i);
+      }
+    </script>
+    <div id="blokas">
+      <ul id="blokas1"></ul>
+    </div>
+    <script>
+      for (i = 0; i < 100; i+=2){
+        var eilute = document.createElement("li");
+        var tekstas = document.createTextNode(i);
+        var tekstas1 = document.createTextNode(i*i);
+        var tekstas2 = document.createTextNode(i*i*i);
+        var tarpas = document.createTextNode(" ");
+        var tarpas2 = document.createTextNode(" ");
+        eilute.appendChild(tekstas);
+        eilute.appendChild(tarpas);
+        eilute.appendChild(tekstas1);
+        eilute.appendChild(tarpas2);
+        eilute.appendChild(tekstas2);
+        document.getElementById("blokas1").appendChild(eilute);
+      }
+    </script>
+    <hr>
+    <input type="number" id="skaicius">
+    <input type="number" id="pradzia">
+    <input type="number" id="pabaiga">
+    <button onclick="lentele()">daugybos lentele</button>
+
+    <div id="lentelesblokas"></div>
+    
+    <script src="8.js"></script>
+    <hr>
+    <button id="mygtukas">Perjungti turini</button>
+    <p id="paragrafas" style="display: none"> 
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, blanditiis? Culpa officia delectus voluptatem molestias, non rem accusamus voluptatibus. Est.
+    </p>
+    <p id="paragrafas2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?
+    </p>
+    <button id="mygtukas1">Keisti spalva</button>
+    <button id="mygtukas2">Keisti dydi</button>
+    <script src="9.js"></script>
+    <p id="paragrafas5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, blanditiis?
+    </p>
+    <button id="mygtukas5">Perjungti turini</button>
+    <button id="mygtukas51">Perjungti dydi</button>
+    <button id="mygtukas52">Perjungti spalva</button>
+    <script src="10.js"></script>
+    <ul id="zodziai"></ul>
+    <p id="pirmas"></p>
+    <p id="antras"></p>
+    <p id="paskutinis"></p>
+    <script src="11.js"></script>
+  </body>
+</html>

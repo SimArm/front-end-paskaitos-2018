@@ -1,0 +1,9 @@
+#kvadratas {
+    background-color: black;
+}
+#paragrafas5 {
+    opacity: 0;
+    transition: 0.5s all;
+    font-size: 35px;
+    color: red;
+}

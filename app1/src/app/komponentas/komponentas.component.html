@@ -1,0 +1,9 @@
+<button class="btn btn-primary"
+  (click)="onCreateList()">Prideti uzduoti</button>
+<input type="text" class="form-control"
+    [(ngModel)]="uzduotisName">
+<li *ngFor="let uzduotis of uzduotys"
+  (click)="onClick()">
+  {{uzduotis}}
+</li>
+

@@ -1,0 +1,84 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.eile{
+    display: flex;
+}
+#virsus{
+    background-color: rgb(0, 0, 0);
+    padding: 0em 2em; 
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+#virsus h4{
+    font-family: arial;
+    color: rgb(206, 206, 82);
+}
+#virsus li{
+    display: inline;
+}
+#virsus a{
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+}
+#headeris{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    color: white;
+    background-image: url(pexels-photo-640947.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+#headeris h1{
+    text-transform: uppercase;
+    font-family: Arial; 
+}
+#headeris li{
+    display: inline;
+}
+#headeris li > a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid white;
+}
+#vid p{
+    display: flex;
+    background-color: rgb(60, 60, 107);
+    color: white;
+    margin: 0;
+    padding: 20px 50px;
+    justify-content: center;
+    text-align: center;
+}
+#straipsniai{
+    background-color: rgb(236, 235, 235);
+}
+#straipsniai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#straipsniai > div{
+    margin: 1em 2em;
+    padding: 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: space-between;
+    background-color: white;
+}
+#straipsniai p:last-child {
+    display: flex;
+    text-align: right;
+}
